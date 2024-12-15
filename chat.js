@@ -11,7 +11,7 @@ sendButton.addEventListener('click', async () => {
     messageInput.value = '';
 
     try {
-        const response = await fetch('http://localhost:5500/chat', {
+        const response = await fetch('http://localhost:5501/chat', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: userMessage }),
